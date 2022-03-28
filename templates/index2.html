@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello world
+<br>
+{#换行#}
+{{data}}
+<br>
+{{data["name"]}}
+<br>
+{{data["age"]}}
+<br>
+mylist: {{data.mylist}}
+<br>
+mylist: {{data.mylist[1]}}
+<br>
+sum: {{ data.mylist[1] + data.mylist[2]}}
+<br>
+{#过滤器#}
+{#upper大写#}
+{{"hello_world" | upper}}
+<br>
+{#单词首字母大写#}
+{{"hello_world" | title}}
+<br>
+{#自定义过滤器#}
+mylist_custom: {{data.mylist | mylist}}
+</body>
+</html>
